@@ -465,7 +465,7 @@ importers:
         version: 2.0.32(zod@3.25.76)
       '@ai-sdk/google':
         specifier: ^3.0.22
-        version: 3.0.22(zod@3.25.76)
+        version: 3.0.146(zod@3.25.76)
       '@ai-sdk/google-vertex':
         specifier: ^4.0.45
         version: 4.0.45(zod@3.25.76)
@@ -1160,6 +1160,12 @@ packages:
 
   '@ai-sdk/google-vertex@4.0.45':
     resolution: {integrity: sha512-KkOsYd9DiyNatqxr/dSKzC6qrxwxOXZ63vu6Yfz2A7bPCsrwKzcN9SQRuhbVkBa1j0C78YiSDKuQvclfOk/0Kw==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      zod: 3.25.76
+
+  '@ai-sdk/google@3.0.146':
+    resolution: {integrity: sha512-EF3soV6PNvi9y3wARNS5zVSk2VyCGZ5/S8EcZ19odGaa4V7BXBqPeLHGObEu73bH5KenVDGkK4srYal3TV0MvQ==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: 3.25.76
@@ -13368,6 +13374,12 @@ snapshots:
       zod: 3.25.76
     transitivePeerDependencies:
       - supports-color
+
+  '@ai-sdk/google@3.0.146(zod@3.25.76)':
+    dependencies:
+      '@ai-sdk/provider': 3.0.19
+      '@ai-sdk/provider-utils': 4.0.66(zod@3.25.76)
+      zod: 3.25.76
 
   '@ai-sdk/google@3.0.22(zod@3.25.76)':
     dependencies:
